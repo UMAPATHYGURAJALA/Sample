@@ -36,7 +36,7 @@ jobs:
       run: |       
         mkdir -p pytest_dir
         export PYNGUIN_DANGER_AWARE="OK"
-        pynguin --project-path . --output-path pytest_dir --module-name Queue1 -v --seed 1629381673714481067
+        pynguin --project-path . --output-path pytest_dir --module-name queue -v --seed 1629381673714481067
         pynguin --project-path . --output-path pytest_dir --module-name test -v
         cat pytest_dir/test_Queue1.py
         cat pytest_dir/test_test.py
