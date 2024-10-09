@@ -1,7 +1,7 @@
 import array
 
 
-class Queue:
+class Queue1:
     def __init__(self, size_max: int) -> None:
         assert size_max > 0
         self.max = size_max
