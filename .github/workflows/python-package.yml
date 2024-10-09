@@ -32,6 +32,8 @@ jobs:
         mkdir -p pytest_dir
         export PYNGUIN_DANGER_AWARE="OK"
         pynguin --project-path . --output-path pytest_dir --module-name Queue1 -v
+        pynguin --project-path . --output-path pytest_dir --module-name test -v
+        cat pytest_dir/test_Queue1.py
         cat pytest_dir/test_test.py
         python -m pip install flake8 pytest
         
