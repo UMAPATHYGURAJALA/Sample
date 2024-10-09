@@ -31,7 +31,8 @@ jobs:
         python -m pip install pynguin
         mkdir -p pytest_dir
         export PYNGUIN_DANGER_AWARE="OK"
-        pynguin --project-path . --output-path pytest_dir --module-name test -v
+        pynguin --project-path . --output-path pytest_dir --module-name test -v\
+        cat pytest_dir/test_test.py
         python -m pip install flake8 pytest
         
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
