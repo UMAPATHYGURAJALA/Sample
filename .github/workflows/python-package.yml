@@ -30,6 +30,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install pynguin
         mkdir -p pytest_dir
+        export PYNGUIN_DANGER_AWARE $PYTHON_PATH/lib/python3.10/site-packages
         pynguin --project-path . --output-path pytest_dir --module-name test -v
         python -m pip install flake8 pytest
         
